@@ -1,0 +1,544 @@
+<!DOCTYPE html>
+  <html lang="en">
+    <head>
+      <meta charset="UTF-8">
+      <meta name="description" content="">
+      <meta name="keywords" content="keyword 1, keyword 2, keyword 3"/>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="author" content="WebDevCronin" />
+    </head>
+      <body>
+        <nav>
+          <header id="title">
+            <h1>Level up with Javascript</h1>
+          </header>
+              <ul>
+                <li><a class="nav-link" href="#Introduction">Introduction</a></li>
+                <li><a class="nav-link" href="#Section 1">Section 1</a></li>
+                <li><a class="nav-link" href="#Section 2">Section 2</a></li>
+                <li><a class="nav-link" href="#Section 3">Section 3</a></li>
+                <li><a class="nav-link" href="#Section 4">Section 4</a></li>
+                <li><a class="nav-link" href="#Section 5">Section 5</a></li>
+                <li><a class="nav-link" href="#Section 6">Section 6</a></li>
+                <li><a class="nav-link" href="#Section 7">Section 8</a></li>
+                <li><a class="nav-link" href="#Section 9">Section 9</a></li>
+                <li><a class="nav-link" href="#Section 10">Section 10</a></li>
+                <li><a class="nav-link" href="#Section 11">Section 11</a></li>
+                <li><a class="nav-link" href="#More Information">More Information</a></li>
+                <li><a class="nav-link" href="#Contact">Contact and more Information</a></li>
+              </ul>
+            </nav>
+              <main id="main-doc">
+                <section class="main-section" id="Introduction">
+                  <header>
+                    Introduction
+                  </header>
+                    <p> Hello and welcome to my javascript tutorial "Level up with Javascript". <br>
+                      In this tutorial you will be introduced to basic javascript programming concepts.<br> 
+                      The content outine in this tutorial directly follows that of FreeCodeCamp.org.<br>
+                      To get started, here is an example of a basic javascript program called "Hello World.<br>
+                    </p>
+                      <code
+                        >function greetMe(yourName) { alert("Hello " + yourName); }
+                         greetMe("World");
+                      </code>
+                        <p>If you would like to try this out for yourself, click the link below and follow the instructions.</p><br>
+                          <a href="https://slicker.me/javascript/tutorial.htm">How to write "Hello world" in Javascript</a>
+                            <p>Now that you have seen what Javascript is and an example of how to write a simple program, lets level up!</p>
+                  <section class="main-section" id="Section 1">
+                    <header>
+                      <h2>Comments, Declaring Variables, Storing, Assigning, and Initializing Values</h2>
+                    </header>
+                        <h3>Comments</h3>
+                          <p>
+                            Comments are the notes about your code and describes what it does <br>
+                            Javascript will ignore everything after "//"" for in-line and /*the is for multiline
+                          </p>
+                            <code>
+                              // This is an in-line comment.<br>
+                               /* This is a <br>
+                                 multi-line comment */
+                            </code>
+                        <h3>Declaring Variables</h3>
+                          <p>
+                            Variables allow computers to store and use data. Javascript uses these eight data types: undefined, null, boolean, string, symbol, bigint, number,and object.<br>
+                            These variables must be declared by the "var" keyword and we always end our javascript statments with semicolons ";".<br>
+                            Variables can have numbers, letters, $, or _ . They cannot contain spaces or start with numbers. 
+                          </p>
+                            <code>
+                              var level;
+                            </code>
+                        <h3>Storing Values</h3>
+                          <p>
+                            Values can be stored as a varible with the assignment operator (=). In this example I declare the variable "level" and set in to the value "1".<br>
+                            Now each time "level" appears in the code, the program will treat it as "1".    
+                          </p>
+                            <code>
+                              var level;<br>
+                              level = 1;  
+                            </code>
+                        <h3>Assigning Values</h3>
+                          <p>
+                            Next the assignment operator can be used to assign the same value from the previous variable to another variable. With the below example, now javascript_level and level are both the same value of 1.   
+                          </p>
+                            <code>
+                              var level;<br>
+                              level = 1; <br>
+                              var javascript_level;<br> 
+                              javascript_level = level;<br>
+                            </code> 
+                        <h3>Initializing Values</h3>
+                          <p>
+                            Initialize allows us to assign an initial value to a variable as it is declared.
+                          </p>
+                            <code>
+                              var level = 1;
+                            </code>                                           
+                  </section>
+                  <section class="main-section" id="Section 2">
+                    <header>
+                      <h2>Uninitialized Variables, Case Sensitive Variables, Adding Two Numbers, Subtracting Numbers, Multiplying Two Numbers</h2>
+                    </header>
+                        <h3>Uninitialized Variables</h3>
+                          <p>
+                            When a variable is not set to a value, it is defaulted as "undefined". Not a number(NaN) will be your output if you do not assign a value and try to do a math operation. 
+                          </p>
+                            <code>
+                               var level;
+                               alert ( level === undefined )
+                            </code>
+                        <h3>Case Sensitive Variables</h3>
+                          <p>
+                            In javascript case senitivity matters. "LEVEL" is not the same as "level". Best practice is to use all lower case in single word variables.<br>
+                            In multi-word variables use lower case for the first word, and capitalize the first letter of any subsequent words. This is called camelCase.
+                          </p>
+                            <code>
+                              var levelUp;
+                              var levelUpYourSkills;
+                            </code>
+                        <h3>Adding Two Numbers</h3>
+                          <p>
+                            Adding numbers is just as easy as using a (+) between numbers. the result will show as // assigned (number)
+                          </p>
+                            <code>
+                              level = 1+1; // assigned 2
+                            </code> 
+                        <h3>Subtracting Numbers</h3>
+                          <p>
+                             The same applies with subtraction, but indtead you use (-).
+                          </p>
+                            <code>
+                              hitPointsTotal = 10 - 1; // assigned 9
+                           </code>
+                        <h3>Multiplying Two Numbers</h3>
+                          <p>
+                            When multiplying nubers we use the (*) operator
+                          </p>
+                            <code>
+                              damage = 6 * 6; // assigned 36
+                            </code> 
+                  </section>
+                  <section class="main-section" id="Section 3">
+                    <header>
+                      <h2>Dividing Numbers, Increments, Decrements, Multiplying Decimals, and Dividing Decimals</h2>>
+                    </header>
+                    <h3>Dividing Numbers</h3>
+                    <p>
+                      The operator for dividing numbers is the (/) symbol.
+                    </p>
+                      <code>
+                        experiencePerCharacter = 100 / 5; // assigned 20
+                      </code>
+                  <h3>Increments</h3>
+                    <p>
+                      Increments are used to simply add one to a variable. To do this we use the (++) operator.
+                    </p>
+                      <code>
+                        greatAxe++; (is the same as) greatAxe = greatAxe + 1;
+                      </code>
+                  <h3>Decrements</h3>
+                    <p>
+                      Like increments, decrements are used to instead subtract one from a variable . This is fone using the (--) operator.
+                    </p>
+                      <code>
+                        strength--; (is the same as) strength = strength - 1;
+                      </code> 
+                  <h3>Multiplying Decimals</h3>
+                    <p>
+                       In javascript decimal numbers can also be stored in variables. they are often referred to as floating point numbers aka floats. Keep in mind that these numbers will not be exact and will possibly lead to rounding or accuracy errors.<br>
+                       Decimals can also be multiplied with the (*) operator as well.
+                    </p>
+                      <code>
+                        Var experiencePerEnemy = 10.5 * 10; // assigned 105
+                     </code>
+                  <h3>Dividing Decimals</h3>
+                    <p>
+                      The same applies to dividing decimals.
+                    </p>
+                      <code>
+                        var experiencePerCharacter = 10.8 / 2; // assigned 5.4
+                      </code> 
+                  </section>
+                  <section class="main-section" id="Section 4">
+                    <header>
+                      <h2>Finding Remainder, Compound Assignment Augmented Addition, Compound Assignment Augmented Subtraction, Compound Assignment Augmented Multiplication, and Compound Assignment Augmented Division</h2>>
+                    </header>
+                  <h3>Finding Remainder</h3>
+                    <p>
+                      When dividing numbers that do not divide as a whole number, the remainder operator (%) can be used to find how much remains after the the division.
+                    </p>
+                      <code>
+                       var remainder = 13 % 2;
+                        var remainder = 1;
+                      </code>
+                  <h3>Compound Assignment Augmented Addition</h3>
+                    <p>
+                      Compounded assignment uses the (+=) operator to do the mathmatical operation and then assignment in one step. The mathmatical operation to the right of the equal sign is always performed first and follows the order of operations.
+                    </p>
+                      <code>
+                         var spellDamage = 10
+                          spellDamage += 5
+                           console.log(spellDamge); // this will return 15
+                      </code> 
+                  <h3>Compound Assignment Augmented Subtraction</h3>
+                    <p>
+                       Compounded assignments can also be used with augmented subtraction using the (-=) operator.
+                    </p>
+                      <code>
+                         var hitPoints = 20;
+                          hitPoints -= 5
+                           consol.log(hitPoints); // this wil return 15
+                     </code>
+                  <h3>Compound Assignment Augmented Multiplication</h3>
+                    <p>
+                      By using the (*=) operator we can use compunded assignment for augmented multiplication.
+                    </p>
+                      <code>
+                        var criticalHit = 2
+                         criticalHit *= 10
+                          console.log(criticalHit); // this will return 20
+                      </code> 
+                  <h3>Compound Assignment Augmented Division</h3>
+                    <p>
+                       By using the (/=) operator we can use compounded assignment for augmented division.
+                    </p>
+                      <code>
+                         var moveSpeed = 30 
+                          moveSpeed /= 2
+                           console.log(moveSpeed); // the will return 15
+                      </code>
+                  </section>
+                  <section class="main-section" id="Section 5">
+                    <header>
+                      <h2>Declare String Variables, Escaping Literal Quotes in Strings, Quoting Strings with Single Quotes, Escape Sequences in Strings, and Concatenating Strings with Plus Operator</h2>>
+                    </header>
+                  <h3>Declare String Variables</h3>
+                    <p>
+                      A string variable is when zero or more characters are enclosed in quotes.
+                    </p>
+                      <code>
+                        var characterClass = "Tempest Cleric"
+                      </code>
+                  <h3>Escaping Literal Quotes in Strings</h3>
+                    <p>
+                       Escaping literal quotes are used when you need to use quotes inside of the quotes of the declared string. This is done using a backslash before both of the actual quotations.
+                    </p>
+                      <code>
+                        var magicAxe = "Greataxe \"of the Brute\""; (When printed this would look like; Greataxe "of the Brute")
+                      </code> 
+                  <h3>Quoting Strings with Single Quotes</h3>
+                    <p>
+                      When quoting, single quotes or double quotes may be used. If this is done however, care needs to be taken to avoid ending the string with a none paired single quotation character.
+                      Again the backslash can be used before the quotation character to escape it and prevent the error.
+                    </p>
+                      <code>
+                        errorString = 'The barkeep looked over and asked, "who's responsible for this barbarian?".'
+                        correctString = 'The paladin replied, "must be that rouge\'s over there".'
+                     </code>
+                  <h3>Escape Sequences in Strings</h3>
+                    <p>
+                      Other than to escape quotes, there are also some special characters that we need to use the backslash to escape. When we do this make sure not to add any spaces between escape sequences or words.<br> 
+                      Below is a list of some of these possible characters;
+                    </p>
+                      <ul>
+                         <li> \'	single quote</li>
+                         <li> \"	double quote</li>
+                         <li> \\	backslash</li>
+                         <li> \n	newline</li>
+                         <li> \r	carriage return</li>
+                         <li> \t	tab</li>
+                         <li> \b	word boundary</li>
+                         <li> \f	form feed</li>
+                      </ul>
+                      <code>
+                         var character = "Druid\n\tLevel\One" // This would appear as <br>
+                           Druid<br>
+                              Level One
+                      </code> 
+                  <h3>Concatenating Strings with Plus Operator</h3>
+                    <p>
+                      Concanating strings uses the (+) concanating operator to add strings together. This is used to build a new string. There will be no spaces unless specifically added.
+                    </p>
+                      <code>
+                       var subClass = "Moon " + "Druid"; // The new string would look like this; Moon Druid 
+                      </code> 
+                  </section>
+                  <section class="main-section" id="Section 6">
+                    <header>
+                      <h2>Concatenating Strings with Plus Equals Operator, Constructing Strings with Variables, Appending Variables to Strings, Find the Length of a String, Use Bracket Notation to Find the First Character in a String</h2>
+                    </header>
+                    <h3>Concatenating Strings with Plus Equals Operator</h3>
+                    <p>
+                       As we did with the compounded assignment (+=) operator before, now we will use it to concatenate a string on an existing variable. Again spaces only exist if we add them.
+                    </p>
+                      <code>
+                        var iroh = "dragon, ";
+                          dragon += "of the west."; // iroh would now be "dragon, of the west"
+                      </code>
+                  <h3>Constructing Strings with Variables</h3>
+                    <p>
+                      In javascript it is common to build longer, more complex strings. To do this we will be using the concatenation operator (+) to insert one or more variables to construct the string. 
+                    </p>
+                      <code>
+                        var mySpell = "magic missile";
+                          spellDescription = "I cast the spell " + mySpell + ", and three glowing darts home in on my target."; // spellDescription will now be "I cast the spell magic missile, and three glowing darts home in on my target."
+                      </code>
+                  <h3>Appending Variables to Strings</h3>
+                    <p>
+                      Variables can also be appended to strings using the (+=) operator.
+                    </p>
+                      <code>
+                        var alignmentTwo = "good" 
+                          var alignment = "chaotic"
+                            alignment += alignmentTwo; // aligment is now "chaotic good"
+                      </code> 
+                  <h3>Find the Length of a String</h3>
+                    <p>
+                       To find the length of a string we use (.length) after the string but before the end (;). Length is given in the number of characters. It can be used on string variables or string literals. 
+                    </p>
+                      <code> 
+                        Example one;
+
+                          "Tabletop game".length; // length would be 13
+                        Example two;
+
+                          var game = "Dungeons and Dragons"
+                            var gameLength = game.length; // now gameLength is equal to 20
+                     </code>
+                  <h3>Use Bracket Notation to Find the First Character in a String</h3>
+                    <p>
+                      In javascript counting starts at 0, and is referred to as Zero-based indexing. By using bracket notation ([]) we can get any character at a specific index in a string. 
+                    </p>
+                      <code>
+                        var class = "Wizard";
+                          var firstLetter = class[0]; // the firstLetter is "W", also class[1] would have been "i" etc.
+                      </code> 
+                  </section>
+                  <section class="main-section" id="Section 7">
+                    <header>
+                      <h2>Understand String Immuntability, Use Bracket Notation to Find the Nth Character in a String, Use Bracket Notation to Find the Last Character in a String, Use Bracket Notation to Find the Nth-to-Last Character in a String</h2>>
+                    </header>
+                    <h3>Understand String Immuntability</h3>
+                    <p>
+                      Immutable means a string cannot be altered once assigned. They way we make changes to strings is to assign with a new string.  
+                    </p>
+                      <code>
+                         var name = "Lizard";
+                          name[0] = "W"; // The is is an example of the wrong way
+
+                          var name = "Lizard";
+                            name = "Wizard"; // This a correct example that reassigns "Lizard" and makes it "Wizard"
+                      </code>
+                  <h3>Use Bracket Notation to Find the Nth Character in a String</h3>
+                    <p>
+                      If we want to find which character of a string is sitting at a particular value, we again use bracket notation with the number position we want to find [Nth].
+                    </p>
+                      <code>
+                        var characterClass = "Druid";
+                         var fourthLetterOfDruid = characterClass[3]; // fourthLetterOfDruid is "i"
+                      </code>
+                  <h3>Use Bracket Notation to Find the Last Character in a String</h3>
+                    <p>
+                      When we want to find the last character of a string, we can subtract one from the string's length. 
+                    </p>
+                      <code>
+                        var spell = "Fireball"
+                          spell[spell.length - 1]; // the last letter will be "l"
+                     </code>
+                  <h3>Use Bracket Notation to Find the Nth-to-Last Character in a String</h3>
+                    <p>
+                      Just as we did before to find the Nth and the last character in a string, we can combine the two to find the last to Nth character.
+                    </p>
+                      <code>
+                        var enemy = "Goblin Mage";
+                         var secondToLastLetter = enemy[enemy.length - 2]; // the second to last letter is "g"
+                      </code> 
+                  </section>
+                  <section class="main-section" id="Section 8">
+                    <header>
+                      <h2>Word Blanks, Store Multiple Values in One Variable Using Javascript Arrays, Nest One Array Within Another Array, Access Array Data With Indexes, Modify Array Data</h2>
+                    </header>
+                    <h3>Word Blanks</h3>
+                    <p>
+                  
+                    </p>
+                      <code>
+                    
+                      </code>
+                  <h3>Store Multiple Values in One Variable Using Javascript Arrays</h3>
+                    <p>
+                    
+                    </p>
+                      <code>
+                      
+                      </code>
+                  <h3>Nest One Array Within Another Array</h3>
+                    <p>
+                    
+                    </p>
+                      <code>
+                      
+                      </code> 
+                  <h3>Access Array Data With Indexes</h3>
+                    <p>
+                  
+                    </p>
+                      <code>
+                    
+                     </code>
+                  <h3>Modify Array Data</h3>
+                    <p>
+                    
+                    </p>
+                      <code>
+                      
+                      </code> 
+                  </section>
+                  <section class="main-section" id="Section 9">
+                    <header>
+                      <h2>Access Multi-Dimensional Arrays With Indexes, Manipulate Arrays With Push(), Manipulate Arrays with Pop(), Manipulate Arrays With Shift(), Manipulate Arrays With Unshift()</h2>
+                    </header>
+                    <h3>Access Multi-Dimensional Arrays With Indexes</h3>
+                    <p>
+                  
+                    </p>
+                      <code>
+                    
+                      </code>
+                  <h3>Manipulate Arrays With Push()</h3>
+                    <p>
+                    
+                    </p>
+                      <code>
+                      
+                      </code>
+                  <h3>Manipulate Arrays with Pop()</h3>
+                    <p>
+                    
+                    </p>
+                      <code>
+                      
+                      </code> 
+                  <h3>Manipulate Arrays With Shift()</h3>
+                    <p>
+                  
+                    </p>
+                      <code>
+                    
+                     </code>
+                  <h3>Manipulate Arrays With Unshift()</h3>
+                    <p>
+                    
+                    </p>
+                      <code>
+                      
+                      </code> 
+                  </section>
+                  <section class="main-section" id="Section 10">
+                    <header>
+                      <h2>Shopping List, Reusable Javascript With Functions, Passing Values to Functions With Arguments, Global Scope and Functions, Local Scope and Functions</h2>>
+                    </header>
+                    <h3>Shopping List</h3>
+                    <p>
+                  
+                    </p>
+                      <code>
+                    
+                      </code>
+                  <h3>Reusable Javascript With Functions</h3>
+                    <p>
+                    
+                    </p>
+                      <code>
+                      
+                      </code>
+                  <h3>Passing Values to Functions With Arguments</h3>
+                    <p>
+                    
+                    </p>
+                      <code>
+                      
+                      </code> 
+                  <h3>Global Scope and Functions</h3>
+                    <p>
+                  
+                    </p>
+                      <code>
+                    
+                     </code>
+                  <h3>Local Scope and Functions</h3>
+                    <p>
+                    
+                    </p>
+                      <code>
+                      
+                      </code> 
+                  </section>
+                  <section class="main-section" id="Section 11">
+                    <header>
+                      <h2> Global vs. Local Scope in Functions, Return a Value From a Function With Return, Understanding Undefined Value Returned From a Function, Assignment with a Returned Value, Stand in Line</h2>>
+                    </header>
+                    <h3>Global vs. Local Scope in Functions</h3>
+                    <p>
+                  
+                    </p>
+                      <code>
+                    
+                      </code>
+                  <h3>Return a Value From a Function With Return</h3>
+                    <p>
+                    
+                    </p>
+                      <code>
+                      
+                      </code>
+                  <h3>Understanding Undefined Value Returned From a Function</h3>
+                    <p>
+                    
+                    </p>
+                      <code>
+                      
+                      </code> 
+                  <h3>Assignment with a Returned Value</h3>
+                    <p>
+                  
+                    </p>
+                      <code>
+                    
+                     </code>
+                  <h3>Stand in Line</h3>
+                    <p>
+                    
+                    </p>
+                      <code>
+                      
+                      </code> 
+                  </section>
+              </main>
+                <footer id="Contact">
+                  <p>For more information check out:</p>
+                    <p>Contact Info</p>
+                </footer>
+      </body>
+    </html>
+       
