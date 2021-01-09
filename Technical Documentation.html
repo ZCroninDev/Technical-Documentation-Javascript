@@ -22,8 +22,6 @@
                 <li><a class="nav-link" href="#Section 6">Section 6</a></li>
                 <li><a class="nav-link" href="#Section 7">Section 8</a></li>
                 <li><a class="nav-link" href="#Section 9">Section 9</a></li>
-                <li><a class="nav-link" href="#Section 10">Section 10</a></li>
-                <li><a class="nav-link" href="#Section 11">Section 11</a></li>
                 <li><a class="nav-link" href="#More Information">More Information</a></li>
                 <li><a class="nav-link" href="#Contact">Contact and more Information</a></li>
               </ul>
@@ -31,10 +29,10 @@
               <main id="main-doc">
                 <section class="main-section" id="Introduction">
                   <header>
-                    Introduction
+                    <h2>Introduction</h2>
                   </header>
                     <p> Hello and welcome to my javascript tutorial "Level up with Javascript". <br>
-                      In this tutorial you will be introduced to basic javascript programming concepts.<br> 
+                      In this tutorial you will be introduced to some of the basic javascript programming concepts.<br> 
                       The content outine in this tutorial directly follows that of FreeCodeCamp.org.<br>
                       To get started, here is an example of a basic javascript program called "Hello World.<br>
                     </p>
@@ -237,7 +235,7 @@
                       A string variable is when zero or more characters are enclosed in quotes.
                     </p>
                       <code>
-                        var characterClass = "Tempest Cleric"
+                        var character = "Tempest Cleric"
                       </code>
                   <h3>Escaping Literal Quotes in Strings</h3>
                     <p>
@@ -280,7 +278,7 @@
                       Concanating strings uses the (+) concanating operator to add strings together. This is used to build a new string. There will be no spaces unless specifically added.
                     </p>
                       <code>
-                       var subClass = "Moon " + "Druid"; // The new string would look like this; Moon Druid 
+                       var character = "Moon " + "Druid"; // The new string would look like this; Moon Druid 
                       </code> 
                   </section>
                   <section class="main-section" id="Section 6">
@@ -330,8 +328,8 @@
                       In javascript counting starts at 0, and is referred to as Zero-based indexing. By using bracket notation ([]) we can get any character at a specific index in a string. 
                     </p>
                       <code>
-                        var class = "Wizard";
-                          var firstLetter = class[0]; // the firstLetter is "W", also class[1] would have been "i" etc.
+                        var character = "Wizard";
+                          var firstLetter = character[0]; // the firstLetter is "W", also class[1] would have been "i" etc.
                       </code> 
                   </section>
                   <section class="main-section" id="Section 7">
@@ -354,8 +352,8 @@
                       If we want to find which character of a string is sitting at a particular value, we again use bracket notation with the number position we want to find [Nth].
                     </p>
                       <code>
-                        var characterClass = "Druid";
-                         var fourthLetterOfDruid = characterClass[3]; // fourthLetterOfDruid is "i"
+                        var character = "Druid";
+                         var fourthLetterOfDruid = character[3]; // fourthLetterOfDruid is "i"
                       </code>
                   <h3>Use Bracket Notation to Find the Last Character in a String</h3>
                     <p>
@@ -376,42 +374,37 @@
                   </section>
                   <section class="main-section" id="Section 8">
                     <header>
-                      <h2>Word Blanks, Store Multiple Values in One Variable Using Javascript Arrays, Nest One Array Within Another Array, Access Array Data With Indexes, Modify Array Data</h2>
+                      <h2>Store Multiple Values in One Variable Using Javascript Arrays, Nest One Array Within Another Array, Access Array Data With Indexes, Modify Array Data</h2>
                     </header>
-                    <h3>Word Blanks</h3>
-                    <p>
-                  
-                    </p>
-                      <code>
-                    
-                      </code>
                   <h3>Store Multiple Values in One Variable Using Javascript Arrays</h3>
                     <p>
-                    
+                       Multiple values can be stored together by enclosing them with brakets []. these can be any combinatiion of strings and/or numbers.
                     </p>
                       <code>
-                      
+                        var array = ["Natural", 20]
                       </code>
                   <h3>Nest One Array Within Another Array</h3>
                     <p>
-                    
+                      Nesting arrays within other ray is also possible by using brackets inside of brackets. T his is referred to  as multi-dimensional arrays.
                     </p>
                       <code>
-                      
+                        var multiDimensionalArray = [["Hit points", 30], ["Damage Taken", 15]];
                       </code> 
                   <h3>Access Array Data With Indexes</h3>
                     <p>
-                  
+                       Indexes are how we access data inside arrays. They use the same bracket notion as strings but instead are specifiing an entry in an array. Arrays use Zero-based indexing (starts the count from zero) just like strings.
                     </p>
                       <code>
-                    
+                        var diceArray = [2,5,6,4,1,1];
+                          diceArray[3]; // this index would be 4
                      </code>
                   <h3>Modify Array Data</h3>
                     <p>
-                    
+                      As we learned before, strings can not be changed. The entries of arrays are able to be changed however, and this is referred to as mutable. 
                     </p>
                       <code>
-                      
+                        var diceArray = [2,10,8,7];
+                          diceArray[0] = 4; // now the 2 in our array will be 4
                       </code> 
                   </section>
                   <section class="main-section" id="Section 9">
@@ -420,124 +413,65 @@
                     </header>
                     <h3>Access Multi-Dimensional Arrays With Indexes</h3>
                     <p>
-                  
+                      Multi-dimensional arrays can be refered to as an array of arrays. Each set of brackets is a level where the outermost set of brackets are the first level. 
                     </p>
                       <code>
-                    
+                        var diceArray = [
+                        [18,5,1],
+                        [6,10,20],
+                        [2,7,15],
+                        [[4,6,3], 19, 9]
+                        ];
+                        diceArray[0]; // this is [15,5,1]
+                        diceArray[3]; // this is [[4,6,3], 19, 9]
+                        diceArray[3][0][2]; // this would equal 3
                       </code>
                   <h3>Manipulate Arrays With Push()</h3>
                     <p>
-                    
+                      Push (.push()) is used to move one or more data parameters to the end of an array.
                     </p>
                       <code>
-                      
+                         var diceRoll = ["Roll D6", 4,5,2,6]
+                         diceRoll.push(1,5) // diceRoll would now be ["Roll D6", 4,5,2,6,1,5]
                       </code>
                   <h3>Manipulate Arrays with Pop()</h3>
                     <p>
-                    
+                       There is another way data can be changed in an array and this is with the .pop() function. Using .pop() removes the last element from an array and returns it.
                     </p>
                       <code>
-                      
+                         var moonBeam = [8,5,10];
+                         var firstEnemy = moonBeam.pop()
+                         cosole.log(firstEnemy); // this will return 10
+                         console.log(moonBeam); // this will now return [8,5]
                       </code> 
-                  <h3>Manipulate Arrays With Shift()</h3>
+                  <h3>Manipulate Arrays With shift()</h3>
                     <p>
-                  
+                       If we want to manipulate the first element instead of the last, we instead use the .shift() function. 
                     </p>
                       <code>
-                    
+                        var partyComposition = [["Druid", 8 ], ["Fighter", 10], ["Paladin, 10"]]
+                        var splitParty = partyComposition.shift()
+                        console.log(splitParty); // splitParty will now equal ["Druid", 8 ]
+                        console.log(partyComposition); // partyComposition will now equal ["Fighter", 10], ["Paladin, 10"]
                      </code>
                   <h3>Manipulate Arrays With Unshift()</h3>
                     <p>
-                    
+                       As we learned before with .push() to add an element to the end of an array, .unshift() can be used to add an element to the beginning of an array.
                     </p>
                       <code>
-                      
-                      </code> 
-                  </section>
-                  <section class="main-section" id="Section 10">
-                    <header>
-                      <h2>Shopping List, Reusable Javascript With Functions, Passing Values to Functions With Arguments, Global Scope and Functions, Local Scope and Functions</h2>>
-                    </header>
-                    <h3>Shopping List</h3>
-                    <p>
-                  
-                    </p>
-                      <code>
-                    
-                      </code>
-                  <h3>Reusable Javascript With Functions</h3>
-                    <p>
-                    
-                    </p>
-                      <code>
-                      
-                      </code>
-                  <h3>Passing Values to Functions With Arguments</h3>
-                    <p>
-                    
-                    </p>
-                      <code>
-                      
-                      </code> 
-                  <h3>Global Scope and Functions</h3>
-                    <p>
-                  
-                    </p>
-                      <code>
-                    
-                     </code>
-                  <h3>Local Scope and Functions</h3>
-                    <p>
-                    
-                    </p>
-                      <code>
-                      
-                      </code> 
-                  </section>
-                  <section class="main-section" id="Section 11">
-                    <header>
-                      <h2> Global vs. Local Scope in Functions, Return a Value From a Function With Return, Understanding Undefined Value Returned From a Function, Assignment with a Returned Value, Stand in Line</h2>>
-                    </header>
-                    <h3>Global vs. Local Scope in Functions</h3>
-                    <p>
-                  
-                    </p>
-                      <code>
-                    
-                      </code>
-                  <h3>Return a Value From a Function With Return</h3>
-                    <p>
-                    
-                    </p>
-                      <code>
-                      
-                      </code>
-                  <h3>Understanding Undefined Value Returned From a Function</h3>
-                    <p>
-                    
-                    </p>
-                      <code>
-                      
-                      </code> 
-                  <h3>Assignment with a Returned Value</h3>
-                    <p>
-                  
-                    </p>
-                      <code>
-                    
-                     </code>
-                  <h3>Stand in Line</h3>
-                    <p>
-                    
-                    </p>
-                      <code>
-                      
+                        var inventory = ["cloak", "magic ring", "long sword"]
+                        inventory.shift(); // inventory now equals ["magic ring", "long sword"]
+                        inventory.unshift("health potion"); // now inventory equals ["health potion", "magic ring", "long sword"]
                       </code> 
                   </section>
               </main>
                 <footer id="Contact">
-                  <p>For more information check out:</p>
-                    <p>Contact Info</p>
+                  <p>Wait! Although this is the end of my Level Up javascript tutorial, this is only the beginging of your journey. To continue your quest, and for more information please check out:<br>
+                  <a href="https://www.freecodecamp.org/">Free Code Camp</a>
+                  </p>
+                    <p>If you would like to see my source code please check out my <a href="https://github.com/ZCroninDev">GitHub</a><br>
+                      If you would like to follow me on social media, please see me on <a href="https://twitter.com/ZcroninDev">Twitter</a>
+                    </p>
                 </footer>
       </body>
     </html>
